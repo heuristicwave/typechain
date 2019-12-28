@@ -1,13 +1,16 @@
 {
-    "name": "typechain",
-    "version": "1.0.0",
-    "description": "Learning Typescript by making a Blockchain with it",
-    "main": "index.js",
-    "repository": "https://github.com/heuristicwave/typechain",
-    "author": "Heuristic Wave <heuristicwave@gmail.com>",
-    "license": "MIT",
-    "scripts": {
-      "start": "node index.js",
-      "prestart": "tsc"
-    }
+  "name": "typechain",
+  "version": "1.0.0",
+  "description": "Learning Typescript by making a Blockchain with it",
+  "main": "index.js",
+  "repository": "https://github.com/heuristicwave/typechain",
+  "author": "Heuristic Wave <heuristicwave@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "tsc-watch --onSuccess \" node dist/index.js\" "
+  },
+  "devDependencies": {
+    "tsc-watch": "^4.0.0",
+    "typescript-tools": "^0.3.1"
   }
+}
